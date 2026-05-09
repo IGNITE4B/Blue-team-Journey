@@ -138,3 +138,39 @@ They are essential for detecting threats, investigating incidents, and building 
 
 Without logs, a SOC analyst would have very limited ability to investigate suspicious activity.
 ```
+```md id="l59r8z"
+## Why Too Many Logs Can Also Be a Problem
+
+Although logs are essential for security operations, collecting too many logs can create operational challenges for a SOC team.
+
+One problem is noise.
+
+Large environments generate massive amounts of normal activity every second.  
+If analysts receive too many events without proper filtering or prioritization, important alerts may become difficult to identify.
+
+This can lead to:
+
+- Alert fatigue
+- Slower investigations
+- Missed threats
+- Increased false positives
+
+Another issue is storage and cost.
+
+SIEM platforms often charge based on data ingestion and retention.  
+Excessive logging can increase operational costs and reduce efficiency if unnecessary data is collected.
+
+Too many logs can also impact performance.
+
+If the SIEM processes large volumes of low-value events, searches and detections may become slower during investigations.
+
+Because of this, SIEM engineering focuses on:
+
+- Log filtering
+- Data normalization
+- Detection tuning
+- Reducing unnecessary events
+- Prioritizing high-value telemetry
+
+From a SOC perspective, the goal is not simply to collect more logs, but to collect useful and actionable logs that improve visibility and threat detection.
+```
